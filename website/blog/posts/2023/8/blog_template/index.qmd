@@ -1,5 +1,5 @@
 ---
-title: "허깅페이스 KREW 템플릿 블로그 포스트 입니다."
+title: "허깅페이스 KREW 블로그 템플릿 입니다."
 author: "양성모"
 date: "8/24/2023"
 categories: [Template]
