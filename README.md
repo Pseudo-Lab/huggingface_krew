@@ -1,2 +1,2 @@
 # huggingface_krew
-HuggingFace KREW homepage
+Huggingface KREW Blog

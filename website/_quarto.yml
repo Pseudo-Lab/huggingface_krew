@@ -1,0 +1,22 @@
+project:
+  type: website
+
+website:
+  title: "HuggingFace KREW"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: ./blog/blog.qmd
+        text: Blog
+      - about.qmd
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

@@ -1,0 +1,13 @@
+---
+title: "Blog"
+listing:
+  contents: "posts/*/index.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+page-layout: full
+title-block-banner: true
+
+---
+
+
