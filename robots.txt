@@ -1,0 +1,1 @@
+Sitemap: https://Pseudo-Lab.github.io/huggingface_krew/sitemap.xml
