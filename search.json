@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Website",
+    "section": "",
+    "text": "HuggingFace KREW 홈페이지 입니다."
+  },
+  {
+    "objectID": "blog/posts/test/index.html",
+    "href": "blog/posts/test/index.html",
+    "title": "허깅페이스 KREW 예제 블로그 포스트 입니다.",
+    "section": "",
+    "text": "첫 번째 테스트 포스트 입니다."
+  },
+  {
+    "objectID": "blog/blog.html",
+    "href": "blog/blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "허깅페이스 KREW 예제 블로그 포스트 입니다.\n\n\n\n\n\n\n\nquarto\n\n\n\n\n\n\n\n\n\n\n\nAug 24, 2023\n\n\n홍길동\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "HuggingFace KREW는 … 입니다."
+  }
+]
