@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://Pseudo-Lab.github.io/huggingface_krew/index.html</loc>
-    <lastmod>2023-08-24T15:37:57.897Z</lastmod>
+    <lastmod>2023-08-24T16:07:56.707Z</lastmod>
   </url>
   <url>
-    <loc>https://Pseudo-Lab.github.io/huggingface_krew/blog/posts/test/index.html</loc>
-    <lastmod>2023-08-24T15:37:58.107Z</lastmod>
+    <loc>https://Pseudo-Lab.github.io/huggingface_krew/blog/posts/2023/8/jupyternotebook_template/index.html</loc>
+    <lastmod>2023-08-24T16:07:56.967Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Pseudo-Lab.github.io/huggingface_krew/blog/posts/2023/8/blog_template/index.html</loc>
+    <lastmod>2023-08-24T16:07:57.187Z</lastmod>
   </url>
   <url>
     <loc>https://Pseudo-Lab.github.io/huggingface_krew/blog/blog.html</loc>
-    <lastmod>2023-08-24T15:37:58.317Z</lastmod>
+    <lastmod>2023-08-24T16:07:57.407Z</lastmod>
   </url>
   <url>
     <loc>https://Pseudo-Lab.github.io/huggingface_krew/about.html</loc>
-    <lastmod>2023-08-24T15:37:58.487Z</lastmod>
+    <lastmod>2023-08-24T16:07:57.597Z</lastmod>
   </url>
 </urlset>

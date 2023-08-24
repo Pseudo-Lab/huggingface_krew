@@ -7,23 +7,30 @@
     "text": "HuggingFace KREW 홈페이지 입니다."
   },
   {
-    "objectID": "blog/posts/test/index.html",
-    "href": "blog/posts/test/index.html",
-    "title": "허깅페이스 KREW 템플릿 블로그 포스트 입니다.",
+    "objectID": "blog/posts/2023/8/jupyternotebook_template/index.html",
+    "href": "blog/posts/2023/8/jupyternotebook_template/index.html",
+    "title": "허깅페이스 주피터 노트북 Template",
+    "section": "",
+    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\n\ndf = pd.DataFrame({'math': [80,50,70],\n                   'science': [100,90,50]})\ndf\n\n\n\n\n\n  \n    \n      \n      math\n      science\n    \n  \n  \n    \n      0\n      80\n      100\n    \n    \n      1\n      50\n      90\n    \n    \n      2\n      70\n      50\n    \n  \n\n\n\n\n\ndf.plot(kind='bar')\n\n<Axes: >"
+  },
+  {
+    "objectID": "blog/posts/2023/8/blog_template/index.html",
+    "href": "blog/posts/2023/8/blog_template/index.html",
+    "title": "허깅페이스 KREW 블로그 템플릿 입니다.",
     "section": "",
     "text": "첫 번째 테스트 포스트 입니다."
   },
   {
-    "objectID": "blog/posts/test/index.html#제목-2",
-    "href": "blog/posts/test/index.html#제목-2",
-    "title": "허깅페이스 KREW 템플릿 블로그 포스트 입니다.",
+    "objectID": "blog/posts/2023/8/blog_template/index.html#제목-2",
+    "href": "blog/posts/2023/8/blog_template/index.html#제목-2",
+    "title": "허깅페이스 KREW 블로그 템플릿 입니다.",
     "section": "제목 2",
     "text": "제목 2\n제목 2입니다."
   },
   {
-    "objectID": "blog/posts/test/index.html#제목-3",
-    "href": "blog/posts/test/index.html#제목-3",
-    "title": "허깅페이스 KREW 템플릿 블로그 포스트 입니다.",
+    "objectID": "blog/posts/2023/8/blog_template/index.html#제목-3",
+    "href": "blog/posts/2023/8/blog_template/index.html#제목-3",
+    "title": "허깅페이스 KREW 블로그 템플릿 입니다.",
     "section": "제목 3",
     "text": "제목 3\n제목 3입니다."
   },
@@ -32,7 +39,7 @@
     "href": "blog/blog.html",
     "title": "Blog",
     "section": "",
-    "text": "허깅페이스 KREW 템플릿 블로그 포스트 입니다.\n\n\n\n\n\n\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\nAug 24, 2023\n\n\n양성모\n\n\n\n\n\n\nNo matching items"
+    "text": "허깅페이스 주피터 노트북 Template\n\n\n\n\n\n\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\nAug 24, 2023\n\n\n양성모\n\n\n\n\n\n\n  \n\n\n\n\n허깅페이스 KREW 블로그 템플릿 입니다.\n\n\n\n\n\n\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\nAug 24, 2023\n\n\n양성모\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
