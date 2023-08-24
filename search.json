@@ -9,16 +9,30 @@
   {
     "objectID": "blog/posts/test/index.html",
     "href": "blog/posts/test/index.html",
-    "title": "허깅페이스 KREW 예제 블로그 포스트 입니다.",
+    "title": "허깅페이스 KREW 템플릿 블로그 포스트 입니다.",
     "section": "",
     "text": "첫 번째 테스트 포스트 입니다."
+  },
+  {
+    "objectID": "blog/posts/test/index.html#제목-2",
+    "href": "blog/posts/test/index.html#제목-2",
+    "title": "허깅페이스 KREW 템플릿 블로그 포스트 입니다.",
+    "section": "제목 2",
+    "text": "제목 2\n제목 2입니다."
+  },
+  {
+    "objectID": "blog/posts/test/index.html#제목-3",
+    "href": "blog/posts/test/index.html#제목-3",
+    "title": "허깅페이스 KREW 템플릿 블로그 포스트 입니다.",
+    "section": "제목 3",
+    "text": "제목 3\n제목 3입니다."
   },
   {
     "objectID": "blog/blog.html",
     "href": "blog/blog.html",
     "title": "Blog",
     "section": "",
-    "text": "허깅페이스 KREW 예제 블로그 포스트 입니다.\n\n\n\n\n\n\n\nquarto\n\n\n\n\n\n\n\n\n\n\n\nAug 24, 2023\n\n\n홍길동\n\n\n\n\n\n\nNo matching items"
+    "text": "허깅페이스 KREW 템플릿 블로그 포스트 입니다.\n\n\n\n\n\n\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\nAug 24, 2023\n\n\n홍길동\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
