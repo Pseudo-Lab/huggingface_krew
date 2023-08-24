@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://Pseudo-Lab.github.io/huggingface_krew/index.html</loc>
-    <lastmod>2023-08-24T16:07:56.707Z</lastmod>
+    <lastmod>2023-08-24T18:13:08.586Z</lastmod>
   </url>
   <url>
     <loc>https://Pseudo-Lab.github.io/huggingface_krew/blog/posts/2023/8/jupyternotebook_template/index.html</loc>
-    <lastmod>2023-08-24T16:07:56.967Z</lastmod>
+    <lastmod>2023-08-24T18:13:08.876Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Pseudo-Lab.github.io/huggingface_krew/blog/posts/2023/8/finance_news_sentiment/index.html</loc>
+    <lastmod>2023-08-24T18:13:09.136Z</lastmod>
   </url>
   <url>
     <loc>https://Pseudo-Lab.github.io/huggingface_krew/blog/posts/2023/8/blog_template/index.html</loc>
-    <lastmod>2023-08-24T16:07:57.187Z</lastmod>
+    <lastmod>2023-08-24T18:13:09.386Z</lastmod>
   </url>
   <url>
     <loc>https://Pseudo-Lab.github.io/huggingface_krew/blog/blog.html</loc>
-    <lastmod>2023-08-24T16:07:57.407Z</lastmod>
+    <lastmod>2023-08-24T18:13:09.676Z</lastmod>
   </url>
   <url>
     <loc>https://Pseudo-Lab.github.io/huggingface_krew/about.html</loc>
-    <lastmod>2023-08-24T16:07:57.597Z</lastmod>
+    <lastmod>2023-08-24T18:13:09.896Z</lastmod>
   </url>
 </urlset>

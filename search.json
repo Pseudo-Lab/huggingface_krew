@@ -11,7 +11,28 @@
     "href": "blog/posts/2023/8/jupyternotebook_template/index.html",
     "title": "허깅페이스 주피터 노트북 Template",
     "section": "",
-    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\n\ndf = pd.DataFrame({'math': [80,50,70],\n                   'science': [100,90,50]})\ndf\n\n\n\n\n\n  \n    \n      \n      math\n      science\n    \n  \n  \n    \n      0\n      80\n      100\n    \n    \n      1\n      50\n      90\n    \n    \n      2\n      70\n      50\n    \n  \n\n\n\n\n\ndf.plot(kind='bar')\n\n<Axes: >"
+    "text": "주피터 노트북을 이용하여 블로그 포스팅을 작성하는 템플릿 입니다.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\ndf = pd.DataFrame({'math': [80,50,70],\n                   'science': [100,90,50]})\ndf\n\n\n\n\n\n  \n    \n      \n      math\n      science\n    \n  \n  \n    \n      0\n      80\n      100\n    \n    \n      1\n      50\n      90\n    \n    \n      2\n      70\n      50\n    \n  \n\n\n\n\n\ndf.plot(kind='bar')\n\n<Axes: >"
+  },
+  {
+    "objectID": "blog/posts/2023/8/finance_news_sentiment/index.html",
+    "href": "blog/posts/2023/8/finance_news_sentiment/index.html",
+    "title": "뉴스 기사의 감정분석하기",
+    "section": "",
+    "text": "경제 기사의 감정을 평가하는 모델을 사용하는 방법을 정리합니다."
+  },
+  {
+    "objectID": "blog/posts/2023/8/finance_news_sentiment/index.html#토크나이저",
+    "href": "blog/posts/2023/8/finance_news_sentiment/index.html#토크나이저",
+    "title": "뉴스 기사의 감정분석하기",
+    "section": "토크나이저",
+    "text": "토크나이저\nAutoTokenizer를 이용하면 트랜스포머 모델의 이름을 입력으로 사용하여 맞는 토크나이저를 선택할 수 있습니다. 아래와 같이 체크포인트 이름으로 모델에 맞는 토크나이저를 선택해보겠습니다\n\nmodel_name = 'gabrielyang/finance_news_classifier-KR_v7'\ntokenizer = AutoTokenizer.from_pretrained(model_name)\n\n만약 토크나이저 실행 시 protobuf 에러가 발생한다면 pip install protobuf==3.20 명령으로 3.20 버전으로 설치해보세요.\n\n\n\n\n\n\nNote\n\n\n\nsentencepiece는 왜 설치가 필요할까요? SentencePiece는 Google에서 2018년도에 공개한 오픈소스 라이브러리로, 단어를 구분하기 위해 공백을 사용한다는 가정으로 발생하는 문제를 해결하며 다양한 자연어처리 태스크에서 널리 사용되고 있습니다.\n\n\n토크나이저를 이용해서 문자열이 어떻게 변경되는 지 확인합니다. 문자열을 토크나이저의 입력으로 전달합니다.\n\ninput_text = \"\"\"급증하는 가계부채 부담에도 경기회복이 지연될 것이란 우려에 기준금리는 5회 연속 동결했다.\"\"\"\nlen(input_text)\n\n50\n\n\nlen명령으로 글자가 50자임을 확인 했습니다. 토크나이저를 사용한 후 길이를 확인해보겠습니다.\n\ninput_ids = tokenizer(input_text)\ndisplay(input_ids)\ndisplay(len(input_ids['input_ids']))\n\n{'input_ids': [0, 67448, 18128, 2123, 6081, 11931, 3614, 44115, 105494, 20584, 45376, 6192, 23224, 469, 6339, 7956, 24788, 10454, 15916, 165034, 480, 74108, 189792, 769, 190, 6192, 150813, 8354, 25354, 5476, 5, 2], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]}\n\n\n32\n\n\n출력은 ‘input_ids’ 키를 갖는 숫자 리스트 형태로 리턴었고 길이는 32로 줄었습니다. 입력 ID(input ids)는 모델의 입력으로 전달되는 숫자 표현의 토큰 인덱스입니다."
+  },
+  {
+    "objectID": "blog/posts/2023/8/finance_news_sentiment/index.html#pipeline",
+    "href": "blog/posts/2023/8/finance_news_sentiment/index.html#pipeline",
+    "title": "뉴스 기사의 감정분석하기",
+    "section": "Pipeline",
+    "text": "Pipeline\n파이프라인은 데이터를 전처리 및 변환하고 모델에서 예측을 반환하기 위해 특정 순서로 실행되는 일련의 단계를 나타내는 추상화입니다. 파이프라인에서 발견되는 몇 가지 예시 단계는 데이터 전처리, 특징 추출 및 정규화일 수 있습니다.\n문자열 입력을 모델에 사용하기 위해 필요한 토크나이저도 파이프라인에 포함되어 있기 때문에 아래의 코드에서는 문자열 입력을 추론으로 사용합니다.\n\nmodel_name = 'gabrielyang/finance_news_classifier-KR_v7'\nclassifier = pipeline(model=model_name)\n\n\ninput_text\n\n'급증하는 가계부채 부담에도 경기회복이 지연될 것이란 우려에 기준금리는 5회 연속 동결했다.'\n\n\n\nclassifier(input_text)\n\n[{'label': 'negative', 'score': 0.9994288086891174}]\n\n\n추론 결과는 딕셔너리 형태로 label정보와 score로 리턴됩니다. 입력 문자열은 부정적으로 판단되었습니다."
   },
   {
     "objectID": "blog/posts/2023/8/blog_template/index.html",
@@ -39,7 +60,7 @@
     "href": "blog/blog.html",
     "title": "Blog",
     "section": "",
-    "text": "허깅페이스 주피터 노트북 Template\n\n\n\n\n\n\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\nAug 24, 2023\n\n\n양성모\n\n\n\n\n\n\n  \n\n\n\n\n허깅페이스 KREW 블로그 템플릿 입니다.\n\n\n\n\n\n\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\nAug 24, 2023\n\n\n양성모\n\n\n\n\n\n\nNo matching items"
+    "text": "뉴스 기사의 감정분석하기\n\n\n\n\n\n\n\nHuggingFace\n\n\n\n\n\n\n\n\n\n\n\nAug 25, 2023\n\n\n양성모\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n허깅페이스 주피터 노트북 Template\n\n\n\n\n\n\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\nAug 24, 2023\n\n\n양성모\n\n\n\n\n\n\n  \n\n\n\n\n허깅페이스 KREW 블로그 템플릿 입니다.\n\n\n\n\n\n\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\nAug 24, 2023\n\n\n양성모\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
