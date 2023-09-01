@@ -3,6 +3,7 @@ project:
 
 website:
   title: "HuggingFace KREW"
+  search: true
   navbar:
     left:
       - href: index.qmd
@@ -10,13 +11,13 @@ website:
       - href: ./blog/blog.qmd
         text: Blog
       - about.qmd
-
-
-format:
+        
+  google-analytics: "G-L42RQMBKSP"
+  page-footer:
+    center: "HuggingFace KREW"
+        format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
-
-
 
