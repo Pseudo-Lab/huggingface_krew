@@ -15,7 +15,8 @@ website:
   google-analytics: "G-L42RQMBKSP"
   page-footer:
     center: "HuggingFace KREW"
-        format:
+
+format:
   html:
     theme: cosmo
     css: styles.css
